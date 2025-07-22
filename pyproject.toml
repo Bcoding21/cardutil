@@ -4,6 +4,9 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
+dependencies = [
+    "cryptography>=45.0.5",
+]
 
 [project.optional-dependencies]
 dev = [
@@ -19,3 +22,9 @@ mci_ipm_param_to_csv = "cardutil.cli.mci_ipm_param_to_csv:cli_entry"
 mci_ipm_to_csv = "cardutil.cli.mci_ipm_to_csv:cli_entry"
 mideu = "cardutil.cli.mideu:cli_entry"
 paramconv = "cardutil.cli.paramconv:cli_entry"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "pytest-mock>=3.14.1",
+]
