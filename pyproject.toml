@@ -27,4 +27,5 @@ paramconv = "cardutil.cli.paramconv:cli_entry"
 dev = [
     "pytest>=8.4.1",
     "pytest-mock>=3.14.1",
+    "ruff>=0.12.4"
 ]
