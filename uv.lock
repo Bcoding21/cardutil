@@ -18,12 +18,9 @@ dev = [
 
 [package.dev-dependencies]
 dev = [
-<<<<<<< HEAD
     { name = "pytest" },
     { name = "pytest-mock" },
-=======
     { name = "ruff" },
->>>>>>> upstream/master
 ]
 
 [package.metadata]
@@ -35,10 +32,10 @@ requires-dist = [
 provides-extras = ["dev"]
 
 [package.metadata.requires-dev]
-<<<<<<< HEAD
 dev = [
     { name = "pytest", specifier = ">=8.4.1" },
     { name = "pytest-mock", specifier = ">=3.14.1" },
+    { name = "ruff", specifier = ">=0.12.4" },
 ]
 
 [[package]]
@@ -62,9 +59,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/bf/ee/f94057fa6426481d663b88637a9a10e859e492c73d0384514a17d78ee205/cffi-1.17.1-cp313-cp313-win32.whl", hash = "sha256:e03eab0a8677fa80d646b5ddece1cbeaf556c313dcfac435ba11f107ba117b5d", size = 172475, upload-time = "2024-09-04T20:44:43.733Z" },
     { url = "https://files.pythonhosted.org/packages/7c/fc/6a8cb64e5f0324877d503c854da15d76c1e50eb722e320b15345c4d0c6de/cffi-1.17.1-cp313-cp313-win_amd64.whl", hash = "sha256:f6a16c31041f09ead72d69f583767292f750d24913dadacf5756b966aacb3f1a", size = 182009, upload-time = "2024-09-04T20:44:45.309Z" },
 ]
-=======
-dev = [{ name = "ruff", specifier = ">=0.12.4" }]
->>>>>>> upstream/master
 
 [[package]]
 name = "colorama"
