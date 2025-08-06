@@ -39,6 +39,44 @@ Default input file encoding is ``latin-1``. See `Python encodings <https://docs.
       --version             show program's version number and exit
 
 
+``mci_ipm_to_json``
+-------------------
+Converts Mastercard IPM files to JSON format
+
+Default input file encoding is ``latin-1``. Output encoding defaults to ``utf-8``. 
+See `Python encodings <https://docs.python.org/3/library/codecs.html#standard-encodings>`_ for other options.
+
+.. note::
+   Fields defined as datetime in the ISO8583 config will be serialized in ISO 8601 format. 
+   Numeric values will preserve their data types (integers remain integers).
+
+.. code-block:: text
+
+    usage: mci_ipm_to_json [-h] [-o OUT_FILENAME] [--in-encoding IN_ENCODING] 
+                           [--out-encoding OUT_ENCODING] [--no1014blocking] 
+                           [--config-file CONFIG_FILE] [--debug] [--indent INDENT] 
+                           [--compact] [--version]
+                           in_filename
+
+    Mastercard IPM to JSON
+
+    positional arguments:
+      in_filename
+
+    optional arguments:
+      -h, --help            show this help message and exit
+      -o OUT_FILENAME, --out-filename OUT_FILENAME
+      --in-encoding IN_ENCODING
+      --out-encoding OUT_ENCODING  
+      --no1014blocking
+      --config-file CONFIG_FILE
+                            File containing cardutil configuration - JSON format
+      --debug
+      --indent INDENT       JSON indentation level (default: 2)
+      --compact             Output compact JSON without indentation
+      --version             show program's version number and exit
+
+
 
 ``mci_ipm_param_encode``
 ------------------------
