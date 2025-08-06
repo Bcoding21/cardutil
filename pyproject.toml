@@ -20,6 +20,7 @@ mci_ipm_encode = "cardutil.cli.mci_ipm_encode:cli_entry"
 mci_ipm_param_encode = "cardutil.cli.mci_ipm_param_encode:cli_entry"
 mci_ipm_param_to_csv = "cardutil.cli.mci_ipm_param_to_csv:cli_entry"
 mci_ipm_to_csv = "cardutil.cli.mci_ipm_to_csv:cli_entry"
+mci_ipm_to_json = "cardutil.cli.mci_ipm_to_json:cli_entry"
 mideu = "cardutil.cli.mideu:cli_entry"
 paramconv = "cardutil.cli.paramconv:cli_entry"
 
